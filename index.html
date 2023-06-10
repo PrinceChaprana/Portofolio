@@ -1,24 +1,29 @@
 <html>
     <head>
         <meta name="'viewport" content='width=device-width, initial-scale=1'>
-        <link rel="stylesheet" href="index.css">
-        <link rel="stylesheet" href="progress_bar.css">
+        <link rel="stylesheet" href="css/theme/default.css">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/progress_bar.css">
         <script src="app.js"></script>
 
          <!--Fonts-->
          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
          <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
- 
+         <!--Moirai ore-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Moirai+One&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+        <!--fires sans-->
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Shadows+Into+Light&display=swap" rel="stylesheet">
     </head>
     <body>
         <div id="home" class = "sss">
         <div>
             <div class="flex-container content right-align">
-                <div><a id="home" href = "#home">HOME</a></div>
-                <div><a href = "#">CONTACT</a></div>
+                <div><a href = "#home">HOME</a></div>
                 <div><a href = "#aboutme">ABOUT</a></div>
                 <div><a href = "#skills">PROJECTS</a></div>
-                <div id="cv"><a id="cv" href = "#">CV</a></div>
+                <div ><a href = "#">CV</a></div>
+                <div id="cv"><a href = "#">CONTACT</a></div>
             </div>
         </div>
             <!--Intro Page-->
@@ -26,13 +31,18 @@
                 <div class = "section1">
                     <div class = "intro hi">Hi,I'm</div>
                     <div class = "intro names">
-                        <div>PRINCE</div><div>KUMAR</div><div>CHAPRANA</div>
+                        <div id="first">PRINCE</div><div id="second">KUMAR</div><div id="third">CHAPRANA</div>
                     </div>
                 </div>
                 <div class = "section2">
-                    <div class="center_text font_style_1 txt">
+                    <div class="flex flow_column center_text font_style_1 txt">
                         ANDROID DEVELOPER
-                    </div> 
+                        <div id = "view_projects"class=" button_style">
+                            <a href="#">View Projects</a>
+                        </div> 
+                    </div>
+                    
+                    
                 </div>
             </div>
             <div id="aboutme" class="row">
@@ -63,6 +73,76 @@
                     section2
                 </div>
             </div>
+            
+            <div class="row">
+                <div class="heading_f heading_b  center_text">Experience</div>
+                <div class="heading_f center_text">Education</div>
+            </div>
+            <!--Experience Education-->
+            <div class="row">
+                <div class="fb_2 flow_column" >
+                    <div class="experience_card">
+                        <div class="square-dot"><div></div></div>
+                        <div class="border_left">
+                            <div class = "content date_block">2018 - Present</div>
+                            <div class="sub_heading ">Web Developer - <div>XYZ COMPANY</div></div>
+                            <div class="content">this is the best of all what we have done</div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="square-dot"><div></div></div>
+                        <div class="border_left">
+                            <div class = "content date_block">2018 - Present</div>
+                            <div class="sub_heading ">Web Developer - <div>XYZ COMPANY</div></div>
+                            <div>this is the best of all what we have done</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="square-dot"><div></div></div>
+                        <div class="border_left">
+                            <div class = "content date_block">2018 - Present</div>
+                            <div class="sub_heading ">Web Developer - <div>XYZ COMPANY</div></div>
+                            <div>this is the best of all what we have done</div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="fb_2 flow_column" >
+                    <div class="experience_card">
+                        <div class="square-dot"><div></div></div>
+                        <div class="border_left">
+                            <div class = "content date_block">2020 - Present</div>
+                            <div class="sub_heading ">Student - <div>Mit, Meerut</div></div>
+                            <div>this is the best of all what we have done</div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="square-dot"><div></div></div>
+                        <div class="border_left">
+                            <div class = "content date_block">2017 - 2019</div>
+                            <div class="sub_heading ">Student - <div>APS,Shankar Vihar</div></div>
+                            <div>this is the best of all what we have done</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="square-dot"><div></div></div>
+                        <div class="border_left">
+                            <div class = "content date_block">2018 - Present</div>
+                            <div class="sub_heading ">Student - <div>APS,Meerut</div></div>
+                            <div>this is the best of all what we have done</div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div id="skills" class="row">
+                <div class="heading_f heading_b  center_text">showcase</div>
+                <div class="heading_f center_text">project</div>
+            </div>
+            <!--Projects-->
             <div id="skills" class="row">
                 <div class="heading_f heading_b  center_text">RESUME</div>
                 <div class="heading_f center_text">SKILLS</div>
@@ -130,71 +210,6 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="heading_f heading_b  center_text">Experience</div>
-                <div class="heading_f center_text">Education</div>
-            </div>
-            <!--Experience Education-->
-            <div class="row">
-                <div class="fb_2 flow_column" >
-                    <div class="experience_card">
-                        <div class="square-dot"><div></div></div>
-                        <div class="border_left">
-                            <div class = "content date_block">2018 - Present</div>
-                            <div class="sub_heading ">Web Developer - <div>XYZ COMPANY</div></div>
-                            <div>this is the best of all what we have done</div>
-                        </div>
-                    </div>
-                    
-                    <div>
-                        <div class="square-dot"><div></div></div>
-                        <div class="border_left">
-                            <div class = "content date_block">2018 - Present</div>
-                            <div class="sub_heading ">Web Developer - <div>XYZ COMPANY</div></div>
-                            <div>this is the best of all what we have done</div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="square-dot"><div></div></div>
-                        <div class="border_left">
-                            <div class = "content date_block">2018 - Present</div>
-                            <div class="sub_heading ">Web Developer - <div>XYZ COMPANY</div></div>
-                            <div>this is the best of all what we have done</div>
-                        </div>
-                    </div>
-                    
-                </div>
-                
-                <div class="fb_2 flow_column" >
-                    <div class="experience_card">
-                        <div class="square-dot"><div></div></div>
-                        <div class="border_left">
-                            <div class = "content date_block">2018 - Present</div>
-                            <div class="sub_heading ">Web Developer - <div>XYZ COMPANY</div></div>
-                            <div>this is the best of all what we have done</div>
-                        </div>
-                    </div>
-                    
-                    <div>
-                        <div class="square-dot"><div></div></div>
-                        <div class="border_left">
-                            <div class = "content date_block">2018 - Present</div>
-                            <div class="sub_heading ">Web Developer - <div>XYZ COMPANY</div></div>
-                            <div>this is the best of all what we have done</div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="square-dot"><div></div></div>
-                        <div class="border_left">
-                            <div class = "content date_block">2018 - Present</div>
-                            <div class="sub_heading ">Web Developer - <div>XYZ COMPANY</div></div>
-                            <div>this is the best of all what we have done</div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-            
         </div>
         <footer>
             <div class="sss">

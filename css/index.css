@@ -1,26 +1,16 @@
 :root{
-    --te1:#ffd8ff;
-    --te2:#ff89ff;
-    --te3:#ff00ff;
-    --te4:#890089;
-    --te5:#3b003b;
     --font1:'Oswald', sans-serif;
+    --font2: 'Shadows Into Light', cursive;
+    --font3: 'Fira Sans', sans-serif;
     --headingb:100px;
     --headingf:50px;
     --subheading:35px;
     --content:20px;
 }
 
-[data-theme="dark"]{
-    --te1:#ffa4b6;
-    --te2:#f765a3;
-    --te3:#a155b9;
-    --te4:#165baa;
-    --te5:#0b1354;
-}
-
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
   }
   
 body{
@@ -95,13 +85,12 @@ body{
 .center{
     display: flex;
 }
-.txt{
-    font-size: 100px;
-}
+
 .flex-container{
     display: flex;
-    list-style-type: none;  
-      
+    list-style-type: none; 
+    border-bottom:2px solid;
+    border-color: linear-gradient(to right,rgba(3, 38, 73, 0),rgb(21, 41, 93));
 }
 .flex-container > div{
     margin: 2%;
@@ -112,46 +101,48 @@ body{
     justify-content: end;
     text-align: left;
 }
+a{
+    display: block;
+    text-decoration: none;
+}
 
 .flex-container a{
-    display: block;
-    
-    text-decoration: none;
-    color: #ffd8ff;
+    color: var(--te4);
 }
-#home{
-    color: #890089;
-}
-#home:hover{
-    color:#ff89ff;
-}
+
 #cv{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ff89ff;
+    background-color: var(--te3);
     border-radius:55px;
     padding: 1px 20px;
-    
     text-align: center;
+    color:var(--te1);
+}
+.flex-container a:hover{
+    color: var(--te3);
 }
 
-.flex-container a:hover{
-    color: #ff89ff;
-}
 
 .intro{
-    font-family: 'Oswald', sans-serif;
-    color:white;
     font-size: 150px;
     margin: 0%;
 }
 .hi{
-    font-size: 60px;;
+    font-size: 60px;
+    font-family: var(--font1);
+    color:var(--te3);
 }
 .names{
-    color:#890089;
+    color:var(--te4);
+    font-family: var(--font2);
     line-height: 1;
+}
+.txt{
+    font-size: 100px;    
+    font-family: var(--font1);
+    color:var(--te3);
 }
 .names >div {
     display: block;
@@ -159,47 +150,68 @@ body{
     padding: 0px;
 }
 
+.button_style{
+    background-color: var(--te3);
+    color: var(--te1);
+    margin:0 5% 0 5%;
+    padding: 1%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: var(--content);
+}
+.button_style>a{
+    color:var(--te1);
+}
+.button_style :hover{
+    background-color: var(--te2);
+}
+
 .heading_f{
     position: relative;
     font-size: var(--headingf);
     font-family: var(--font1);
-    color:var(--te1);
+    color:var(--te4);
     height: 100px;
     letter-spacing: 5px;
     text-transform: uppercase;
 }
 .heading_b{
     position: absolute;
-    color:var(--te4);
+    color:var(--te1);
     font-size: var(--headingb);
     letter-spacing: 20px;    
     text-transform: uppercase;
+    border-bottom: 2px solid var(--te4);
 }
+
 .sub_heading{
     font-size: var(--subheading);
     font-family: var(--font1);
     text-transform: uppercase;
-    color: var(--te1);
+    color: var(--te4);
 }
 .sub_heading > div{
     display: inline-block;
-    color:var(--te4);
+    color:var(--te2);
+    font-family: var(--font3);
 }
 .content{
     font-size: var(--content);
-    font-family: var(--font1);
+    font-family:var(--font3);
     text-transform: uppercase;
-    color: var(--te1);
+    color: var(--te2);
 }
 .date_block{
     display: flex;
-    background-color: var(--te4);
+    background-color: var(--te3);
     width: 25%;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     padding: 5px 10px;
     border-radius: 25px;
+    font-family: var(--font1);
+    color:var(--te1);
 }
 .square-dot{
     position: absolute;
@@ -237,10 +249,12 @@ ul{
     line-height: 2;
 }
 ul>li>b{
-    color:black;
+    color:var(--te3);
+    font-family: var(--font1);
 }
 ul>li{
-    color:var(--te1);
+    color:var(--te2);
+    font-family: var(--font3);
 }
 footer{
     background-color:var(--te2);
@@ -270,10 +284,13 @@ footer{
     border: none;
 
 }
+
+#view_projects{
+    width:auto;
+    height: auto;
+}
 @media screen and (max-width: 700px) {
     .row, .navbar {   
       flex-direction: column;
     }
   }
-
-
