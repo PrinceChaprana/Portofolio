@@ -1,0 +1,279 @@
+:root{
+    --te1:#ffd8ff;
+    --te2:#ff89ff;
+    --te3:#ff00ff;
+    --te4:#890089;
+    --te5:#3b003b;
+    --font1:'Oswald', sans-serif;
+    --headingb:100px;
+    --headingf:50px;
+    --subheading:35px;
+    --content:20px;
+}
+
+[data-theme="dark"]{
+    --te1:#ffa4b6;
+    --te2:#f765a3;
+    --te3:#a155b9;
+    --te4:#165baa;
+    --te5:#0b1354;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+body{
+    background-color: var(--te5);
+    
+}
+.sss{
+    display: flex;
+    flex-direction: column;
+    margin: 0% 5% 0% 5%;
+}
+.row{
+    display: flex;
+    position: relative;
+    margin-bottom: 5%;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.fb_7{
+    flex:70%;
+}
+.fb_2{
+    display: flex;
+    flex: 50%;
+}
+.fb_3{
+    display: flex;
+    flex: 30%;
+}
+.fb_4{
+    display:flex;
+    flex: 25%;
+}
+.fb_5{
+    flex:20%;
+}
+.relative{
+    position: relative;
+}
+.flow_row{
+    flex-direction: row;
+}
+.flow_column{
+    flex-direction: column;
+
+}
+.flex{
+    display: flex;
+}
+.section1{
+    flex: 30%;
+}
+.section2{
+    flex:70%;
+}
+.bordered {
+    border:1px solid red;
+}
+.font_style_1{
+    font-family: var(--font1);
+    color:var(--te4);
+}
+.center_text{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.center{
+    display: flex;
+}
+.txt{
+    font-size: 100px;
+}
+.flex-container{
+    display: flex;
+    list-style-type: none;  
+      
+}
+.flex-container > div{
+    margin: 2%;
+    flex-wrap: wrap;
+}
+
+.right-align{
+    justify-content: end;
+    text-align: left;
+}
+
+.flex-container a{
+    display: block;
+    
+    text-decoration: none;
+    color: #ffd8ff;
+}
+#home{
+    color: #890089;
+}
+#home:hover{
+    color:#ff89ff;
+}
+#cv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff89ff;
+    border-radius:55px;
+    padding: 1px 20px;
+    
+    text-align: center;
+}
+
+.flex-container a:hover{
+    color: #ff89ff;
+}
+
+.intro{
+    font-family: 'Oswald', sans-serif;
+    color:white;
+    font-size: 150px;
+    margin: 0%;
+}
+.hi{
+    font-size: 60px;;
+}
+.names{
+    color:#890089;
+    line-height: 1;
+}
+.names >div {
+    display: block;
+    margin: 1px;
+    padding: 0px;
+}
+
+.heading_f{
+    position: relative;
+    font-size: var(--headingf);
+    font-family: var(--font1);
+    color:var(--te1);
+    height: 100px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.heading_b{
+    position: absolute;
+    color:var(--te4);
+    font-size: var(--headingb);
+    letter-spacing: 20px;    
+    text-transform: uppercase;
+}
+.sub_heading{
+    font-size: var(--subheading);
+    font-family: var(--font1);
+    text-transform: uppercase;
+    color: var(--te1);
+}
+.sub_heading > div{
+    display: inline-block;
+    color:var(--te4);
+}
+.content{
+    font-size: var(--content);
+    font-family: var(--font1);
+    text-transform: uppercase;
+    color: var(--te1);
+}
+.date_block{
+    display: flex;
+    background-color: var(--te4);
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 10px;
+    border-radius: 25px;
+}
+.square-dot{
+    position: absolute;
+    display: flex;
+    width:50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: var(--te3);
+    justify-content: center;
+    align-items: center;
+}
+.square-dot > div{
+    display: flex;
+    width: 15px;
+    height: 15px;
+    background-color: var(--te1);
+}
+.border_left{
+    border-left:3px solid grey ;
+    margin-left: 24px;
+    margin-bottom: 5%;
+    padding-left: 5%;
+}
+
+.experience_card{
+    margin-top: 10%;
+}
+
+ul{
+    list-style-type:none;
+    padding-left: 0%;
+    padding-right: 10%;
+    font-family: var(--font1);
+    font-size: var(--content);
+    line-height: 2;
+}
+ul>li>b{
+    color:black;
+}
+ul>li{
+    color:var(--te1);
+}
+footer{
+    background-color:var(--te2);
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+}
+
+.form{
+    background-color: var(--te3);
+    padding:20px 10px 20px 10px;
+    border-radius: 30px;
+    margin-bottom: 15%;
+}
+.form>input{
+    margin: 10px 10px;
+    background-color: var(--te5);
+    border-radius: 5px;
+    font-family: var(--font1);
+    font-size: var(--content);
+    color: var(--te1);
+    padding: 5%;
+    border: none;
+}
+
+.form>input:focus{
+    background-color: var(--te2);
+    border: none;
+
+}
+@media screen and (max-width: 700px) {
+    .row, .navbar {   
+      flex-direction: column;
+    }
+  }
+
+
