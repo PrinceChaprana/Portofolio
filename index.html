@@ -2,6 +2,7 @@
     <head>
         <meta name="'viewport" content='width=device-width, initial-scale=1'>
         <link rel="stylesheet" href="css/theme/default.css">
+        <link rel="stylesheet" href="css/nav.css">
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="css/progress_bar.css">
         <script src="app.js"></script>
@@ -16,16 +17,35 @@
         <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Shadows+Into+Light&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div id="home" class = "sss">
-        <div>
-            <div class="flex-container content right-align">
-                <div><a href = "#home">HOME</a></div>
-                <div><a href = "#aboutme">ABOUT</a></div>
-                <div><a href = "#skills">PROJECTS</a></div>
-                <div ><a href = "#">CV</a></div>
-                <div id="cv"><a href = "#">CONTACT</a></div>
+        <nav>
+            <div class="logo"></div>
+            <ul class="nav-links">
+                <li>
+                    <a href = "#home">HOME</a>
+                </li>
+                <li>
+                    <a href = "#aboutme">ABOUT</a>
+                </li>
+                <li>
+                    <a href = "#blog">BLOGS</a>
+                </li>
+                <li>
+                    <a href = "#skills">PROJECTS</a>
+                </li>
+                <li>
+                    <a href = "#">CV</a></div>
+                </li>
+                <li>
+                    <a href = "#">CONTACT</a>
+                </li>
+            </ul>
+            <div class="sidebar-icon">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
             </div>
-        </div>
+        </nav>
+        <div id="home" class = "sss">
             <!--Intro Page-->
             <div class="row marg_5">
                 <div class = "section1">
@@ -115,7 +135,7 @@
                         <div class="border_left">
                             <div class = "content date_block">2020 - Present</div>
                             <div class="sub_heading ">Student - <div>Mit, Meerut</div></div>
-                            <div>this is the best of all what we have done</div>
+                            <div>Percentage : 80%</div>
                         </div>
                     </div>
                     
@@ -124,7 +144,7 @@
                         <div class="border_left">
                             <div class = "content date_block">2017 - 2019</div>
                             <div class="sub_heading ">Student - <div>APS,Shankar Vihar</div></div>
-                            <div>this is the best of all what we have done</div>
+                            <div>Percentage: 84%</div>
                         </div>
                     </div>
                     <div>
@@ -132,7 +152,7 @@
                         <div class="border_left">
                             <div class = "content date_block">2018 - Present</div>
                             <div class="sub_heading ">Student - <div>APS,Meerut</div></div>
-                            <div>this is the best of all what we have done</div>
+                            <div>Percentage: 90%</div>
                         </div>
                     </div>
                     
@@ -151,62 +171,62 @@
             <div class="flex row flow_column relative">
                 <div class="flex flow_row relative">
                     <div class = "fb_4 flow_column center_text">
-                        <div class="progress_bar">
+                        <div id="skill1" class="progress_bar">
                             <progress value="85" min="0" max="100" style="visibility: hidden;height: 0;width: 0;"></progress>
-                            <div class="sub_heading center_text">75%</div>
+                            <div class="sub_heading center_text">90%</div>
                         </div>
                         <div class="sub_heading center_text  ">Html</div>
                     </div>
                     <div class = "fb_4 flow_column center_text  ">
-                        <div class="progress_bar">
+                        <div id="skill2"class="progress_bar">
                             <progress value="85" min="0" max="100" style="visibility: hidden;height: 0;width: 0;"></progress>
                             <div class="sub_heading center_text">75%</div>
                         </div>
-                        <div class="sub_heading center_text  ">Html</div>
+                        <div class="sub_heading center_text  ">CSS</div>
                     </div>
                     <div class = "fb_4 flow_column center_text  ">
-                        <div class="progress_bar">
+                        <div id="skill3" class="progress_bar">
                             <progress value="85" min="0" max="100" style="visibility: hidden;height: 0;width: 0;"></progress>
-                            <div class="sub_heading center_text">75%</div>
+                            <div class="sub_heading center_text">35%</div>
                         </div>
-                        <div class="sub_heading center_text  ">Html</div>
+                        <div class="sub_heading center_text  ">JS</div>
                     </div>
                     <div class = "fb_4 flow_column center_text  ">
-                        <div class="progress_bar">
+                        <div id="skill4" class="progress_bar">
                             <progress value="85" min="0" max="100" style="visibility: hidden;height: 0;width: 0;"></progress>
-                            <div class="sub_heading center_text">75%</div>
+                            <div class="sub_heading center_text">50%</div>
                         </div>
-                        <div class="sub_heading center_text  ">Html</div>
+                        <div class="sub_heading center_text  ">C++</div>
                     </div>
                 </div>
                 <div class="flex flow_row relative ">
                     <div class = "fb_4 flow_column center_text  ">
-                        <div class="progress_bar">
+                        <div id="skill5" class="progress_bar">
                             <progress value="85" min="0" max="100" style="visibility: hidden;height: 0;width: 0;"></progress>
-                            <div class="sub_heading center_text">75%</div>
+                            <div class="sub_heading center_text">50%</div>
                         </div>
-                        <div class="sub_heading center_text  ">Html</div>
+                        <div class="sub_heading center_text  ">JAVA</div>
                     </div>
                     <div class = "fb_4 flow_column center_text  ">
-                        <div class="progress_bar">
-                            <progress value="85" min="0" max="100" style="visibility: hidden;height: 0;width: 0;"></progress>
-                            <div class="sub_heading center_text">75%</div>
+                        <div id="skill6" class="progress_bar">
+                            <progress value="25" min="0" max="100" style="visibility: hidden;height: 0;width: 0;"></progress>
+                            <div class="sub_heading center_text">60%</div>
                         </div>
-                        <div class="sub_heading center_text  ">Html</div>
+                        <div class="sub_heading center_text  ">Python</div>
                     </div>
                     <div class = "fb_4 flow_column center_text  ">
-                        <div class="progress_bar">
+                        <div id="skill7" class="progress_bar">
                             <progress value="85" min="0" max="100" style="visibility: hidden;height: 0;width: 0;"></progress>
-                            <div class="sub_heading center_text">75%</div>
+                            <div class="sub_heading center_text">50%</div>
                         </div>
-                        <div class="sub_heading center_text  ">Html</div>
+                        <div class="sub_heading center_text  ">Android Studio</div>
                     </div>
                     <div class = "fb_4 flow_column center_text  ">
-                        <div class="progress_bar">
+                        <div id="skill8" class="progress_bar">
                             <progress value="85" min="0" max="100" style="visibility: hidden;height: 0;width: 0;"></progress>
-                            <div class="sub_heading center_text">75%</div>
+                            <div class="sub_heading center_text">55%</div>
                         </div>
-                        <div class="sub_heading center_text  ">Html</div>
+                        <div class="sub_heading center_text  ">Unity</div>
                     </div>
                 </div>
             </div>
@@ -239,5 +259,6 @@
                 </div>
             </div>
         </footer>
+        <script src="js/app.js"></script>
     </body>
 </html>

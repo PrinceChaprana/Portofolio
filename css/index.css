@@ -101,11 +101,10 @@ body{
     justify-content: end;
     text-align: left;
 }
-a{
-    display: block;
-    text-decoration: none;
-}
 
+.marg_5{
+    margin-top: 8vh;
+}
 .flex-container a{
     color: var(--te4);
 }
@@ -122,6 +121,9 @@ a{
 }
 .flex-container a:hover{
     color: var(--te3);
+}
+a{
+    text-decoration: none;
 }
 
 
