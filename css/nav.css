@@ -49,7 +49,7 @@ nav{
     background-color: var(--te3);
 }
 
-@media screen and (max-width : 763px){
+@media screen and (max-width : 600px){
     body{
         overflow-x: hidden;
     }

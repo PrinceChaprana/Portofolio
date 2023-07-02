@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale= 1.0 ">
+        <link rel="stylesheet" href="./main.css">
+        <title>React Startup </title>
+
+    </head>
+    <body>
+        <h1>React Setup</h1>
+        <ol>
+            <li>First create the folder for the project</li>
+            <li>write code <strong>npm init -y </strong>in terminal<br>and use ~ to open the terminal in vsCpde</li>
+            <li>This will create <strong>package.json</strong> file in the project<br>this contains the all frameworks like node expresss and ract that is used in the projects</li>
+            <li>now Install react using<br><strong>npm install react react-dom</strong> in terminal</li>
+            <li> to use JSX install babel <br> 
+                <strong>
+                    npm install @babel/core @babel/preset-env @babel/preset-react babel-loader
+                </strong><br>
+                the @ is different packages from babel like core preset-env(for ES6) and react-preset(to convert JSX to react) 
+                babel-loader (to connect babel to webpack)
+            </li>
+            <li>create a babel file with name <Strong>.babelrc</Strong><br>
+                now type the follwing<br>
+                <strong>
+                    {<br>
+                        "presets" : ["@babel/preset-react","@babel/preset-env"]<br>
+                    }
+                </strong>
+            </li>
+            <li>Install webpack and connect above created babel to it<br>
+                <strong>npm install webpack webpack-cli webpack-dev-server</strong>
+            </li>
+            <li>
+                to Connect the babel to webpack we need to create a file 
+                <Strong>webpack.config.js</Strong><br>
+                and paste the following <a href = "https://github.com/developedbyed/simple-react-setup/blob/master/webpack.config.js">code</a> 
+            </li>
+            <li>
+                install the webpack html to use the <br>
+                <strong>npm install html-webpack-plugin</strong>
+            </li>
+            <li>
+                create folder <strong>src</strong><br>
+                this will contain our react code
+            </li>
+            <li>
+                create a <strong>App.js</strong> file in src folder
+                this will code the components and file is<br>
+                <Strong>
+                import react from "react";<br>
+
+                const App = () => (<br>
+                    <div>
+                        Hello React
+                    </div>
+                );<br>
+
+                export default App;<br>
+            </Strong>
+            </li>
+            <li>
+                create a file <strong>index.js</strong> to render the above code
+                <strong><br>
+                    import react from "react";<br>
+                    import reactDom from "react-dom";<br>
+
+                    import App form "./App";<br>
+
+                    reactDom.render(< App/ >,document.querySelector("#root"));<br>
+
+                </strong>
+            </li>
+            <li>
+                create a file <strong>index.html</strong> to base the above code
+                <strong><br>
+                   with div id root
+                </strong>
+            </li>
+            <li>
+                To Run the code head to <strong>package.json</strong> file and replace line 7 <br>
+                <strong>"start" : "webpack-dev-server --hot --open"<br></strong>
+                (for developmment)<br>
+                <Strong>"build" : "webpack --config webpack.config.js --mode producation"</Strong><br>
+                (for final build)
+            </li>
+            <li>
+                <strong> npm install style-loader css-loader </strong> to use css in react
+            </li>
+            <li>
+                to load images <strong>npm install file-loader</strong><br>
+                and use the test to load the files <br>
+                <strong>
+                    , <br>
+                    { <br>
+                        test:/\.png|jpg|svg|gif$/, <br>
+                        use: ["file-loader"] <br>
+                    }
+                </strong>
+            </li>
+        </ol>
+        <h1><center>OR</center></h1>
+        <ol>
+            <li>
+                simple type <strong>npx create-react-app {name of app}</strong>
+            </li>
+        </ol>
+
+
+        <script src="./app.js"></script>
+    </body>
+</html>
